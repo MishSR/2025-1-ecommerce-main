@@ -1,0 +1,37 @@
+
+<header>
+    <div class="header-container">
+        <div class="logo-titulo">
+            <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <img src="/logo.webp" alt="" class="logo" routerLink="catalogo">
+                </a>
+            </div>
+            <div>
+                <ul class="menu">
+                    <li><a class="nav-link" routerLink="catalogo">Velas</a></li>
+                </ul>
+                
+            </div>
+        </div>
+        <div>
+            <ul class="menu">
+                <li><a class="nav-link" routerLink="catalogo">Catálogo</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Velas
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Aroma</a></li>
+                        <li><a class="dropdown-item" href="#">Decorativas</a></li>
+                        <li><a class="dropdown-item" href="#">Grandes</a></li>
+                    </ul>
+                </li>
+
+                <!-- Contador de carrito -->
+                <li><a routerLink="cart"> <span class="contador">{{counter()}}</span> <i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
